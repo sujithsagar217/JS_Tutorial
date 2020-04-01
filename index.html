@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JS_Tutorial</title>
+  <link rel="JavaScript" href="js/script.js">
+</head>
+
+<body>
+
+  <!-- We need to add JavaScript Code in the Script tag -->
+  <script type="text/javascript">
+    console.log(1);
+
+    function addContent() {
+      var para = document.getElementById("para1");
+      para1.innerHTML = "You Added New Content";
+      console.log("Finished Perfectly");
+      var button = document.getElementById("button1");
+      button.style.display = "none";
+      var button = document.getElementById("button2");
+      button.style.display = "block";
+
+    }
+
+    function removeContent() {
+      var para = document.getElementById("para1");
+      para1.innerHTML = "";
+      console.log("Finished Perfectly removed");
+      var button = document.getElementById("button2");
+      button.style.display = "none";
+      var button = document.getElementById("button1");
+      button.style.display = "block";
+
+    }
+  </script>
+
+  <!-- Adding Content -->
+  <button type="button" name="button" id="button1" onclick="addContent()">Add Default Content</button>
+  <button type="button" name="button" id="button2" style="display:none;" onclick="removeContent()">Remove Default Content</button>
+  <p id="para1"></p>
+</body>
+
+</html>
