@@ -11,31 +11,43 @@
 
   <!-- We need to add JavaScript Code in the Script tag -->
   <script type="text/javascript">
-    console.log(1);
+    // '//' single line commnents
+    // /*  MULTI LINE COMMENTS  */
+    console.log(1); // to print anything to the console
 
+    //Funtions in javaScript
     function addContent() {
-      var para = document.getElementById("para1");
+      /* This funtion is used to add the Content
+      to the paragraph tag whose id is 'para1'
+      */
+      var para = document.getElementById("para1"); //Creating a variable and storing the selected element object in it
       para1.innerHTML = "You Added New Content";
-      console.log("Finished Perfectly");
+      console.log(typeof(para1));
+      /*Here we are hiding the "Add Default Content" content and
+        displaying "Remove Default Content" button in it's place.
+      */
       var button = document.getElementById("button1");
       button.style.display = "none";
       var button = document.getElementById("button2");
       button.style.display = "block";
-
     }
 
     function removeContent() {
+      /* This funtion is used to remove the Content
+      of the paragraph tag whose id is 'para1'
+      */
       var para = document.getElementById("para1");
       para1.innerHTML = "";
       console.log("Finished Perfectly removed");
+      /*Here we are hiding the "Reomove Content" content and
+        displaying "Add Default Content" button in it's place.
+      */
       var button = document.getElementById("button2");
       button.style.display = "none";
       var button = document.getElementById("button1");
       button.style.display = "block";
-
     }
   </script>
-
   <!-- Adding Content -->
   <button type="button" name="button" id="button1" onclick="addContent()">Add Default Content</button>
   <button type="button" name="button" id="button2" style="display:none;" onclick="removeContent()">Remove Default Content</button>
