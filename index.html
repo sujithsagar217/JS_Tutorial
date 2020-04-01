@@ -4,16 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>JS_Tutorial</title>
-  <link rel="JavaScript" href="js/script.js">
+  <!--External JS-->
+  <script src="js/script.js"></script>
+  <!--JS in HEAD-->
+  <script type="text/javascript">
+    console.log("HEAD"); // to print anything to console
+  </script>
 </head>
 
 <body>
 
-  <!-- We need to add JavaScript Code in the Script tag -->
+  <!-- We need to add JavaScript Code in the Script tag. JS in BODY -->
+
   <script type="text/javascript">
     // '//' single line commnents
     // /*  MULTI LINE COMMENTS  */
-    console.log(1); // to print anything to the console
+    console.log("BODY"); // to print anything to the console
 
     //Funtions in javaScript
     function addContent() {
