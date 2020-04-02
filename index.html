@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>JS_Tutorial</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <!-- We need to add JavaScript Code in the Script tag-->
   <!--External JS-->
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
   <!--JS in HEAD-->
   <script type="text/javascript">
@@ -14,7 +17,13 @@
 
 <body>
 
-  <!-- We need to add JavaScript Code in the Script tag. JS in BODY -->
+  <!-- JS in BODY -->
+
+  <div class="introduction">
+    <h2>JavaScript Tutorial</h2>
+    <p>Basic introduction</p>
+
+  </div>
 
   <script type="text/javascript">
     // '//' single line commnents
@@ -27,7 +36,7 @@
       to the paragraph tag whose id is 'para1'
       */
       var para = document.getElementById("para1"); //Creating a variable and storing the selected element object in it
-      para1.innerHTML = "You Added New Content";
+      para1.innerHTML = "You Added New Content!!!";
       console.log(typeof(para1));
       /*Here we are hiding the "Add Default Content" content and
         displaying "Remove Default Content" button in it's place.
@@ -35,7 +44,7 @@
       var button = document.getElementById("button1");
       button.style.display = "none";
       var button = document.getElementById("button2");
-      button.style.display = "block";
+      button.style.display = "inline";
     }
 
     function removeContent() {
@@ -51,13 +60,38 @@
       var button = document.getElementById("button2");
       button.style.display = "none";
       var button = document.getElementById("button1");
-      button.style.display = "block";
+      button.style.display = "inline";
     }
   </script>
   <!-- Adding Content -->
-  <button type="button" name="button" id="button1" onclick="addContent()">Add Default Content</button>
-  <button type="button" name="button" id="button2" style="display:none;" onclick="removeContent()">Remove Default Content</button>
-  <p id="para1"></p>
+  <button class="part1" type="button" name="button" id="button1" onclick="addContent()">Add Default Content</button>
+  <button class="part1" type="button" name="button" id="button2" style="display:none;" onclick="removeContent()">Remove Default Content</button>
+  <div id="info1">
+    <p id="para1"></p>
+  </div>
+
+  <hr class="rulers">
+
+  <div class="introduction2">
+    <p>Creating Elements</p>
+
+  </div>
+
+  <button class="part2" type="button" name="button" id="create_input" style="display:inline;" onclick="createInput()">Create Input Tag</button>
+  <button class="part2" type="button" name="button" id="remove_input" style="display:none;" onclick="removeInput()">Remove Input Tag</button>
+  <div id="input_tag">
+
+
+  </div>
+  <button class="part2" type="button" name="button" id="print_input" style="display:none;" onclick="printInput()">Print Input</button>
+  <button class="part2" type="button" name="button" id="reset_input" style="display:none;" onclick="resetInput()">Reset Input</button>
+  <div id="info2">
+    <p id="para2"></p>
+  </div>
+
+  <hr class="rulers">
+
+
 </body>
 
 </html>
