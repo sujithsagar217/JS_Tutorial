@@ -111,8 +111,6 @@ function showDate(){
   var date=Date();
   para.innerHTML=date;
 
-  console.log(typeof(Date()));
-
   console.log("Successfully shown Date and Time");
 
 }
@@ -122,14 +120,11 @@ function showDate(){
 /* part 5 functions */
 
 function checkAnswer(ans_num){
-  console.log(ans_num);
   var answers=[12,111,561,561];
   var answer='answer'+ans_num;
   var result='result'+ans_num;
   var ans_num=Number(ans_num);
   var user_answer=document.getElementById(answer).value;
-  console.log(user_answer);
-  console.log(answers[ans_num-1]);
   if(user_answer==answers[ans_num-1]){
     var t_result=result+'T';
     var decision=document.getElementById(t_result);
@@ -145,4 +140,5 @@ function checkAnswer(ans_num){
     var decision=document.getElementById(t_result);
     decision.style.display="none";
   }
+  console.log("Successfully Checked the Answer and has shown the Result");
 }
