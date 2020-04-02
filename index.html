@@ -3,16 +3,25 @@
 
 <head>
   <meta charset="utf-8">
+
   <title>JS_Tutorial</title>
+
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Montserrat|Sacramento&display=swap" rel="stylesheet">
+
   <!-- We need to add JavaScript Code in the Script tag-->
+
   <!--External JS-->
+
   <link rel="stylesheet" href="css/style.css">
+
   <script src="js/script.js"></script>
+
   <!--JS in HEAD-->
+
   <script type="text/javascript">
     console.log("HEAD"); // to print anything to console
   </script>
+
 </head>
 
 <body>
@@ -22,7 +31,6 @@
   <div class="introduction">
     <h2>JavaScript Tutorial</h2>
     <p>Basic introduction</p>
-
   </div>
 
   <script type="text/javascript">
@@ -43,6 +51,7 @@
       */
       var button = document.getElementById("button1");
       button.style.display = "none";
+
       var button = document.getElementById("button2");
       button.style.display = "inline";
       console.log("Successfully added the Default Content");
@@ -60,38 +69,52 @@
       */
       var button = document.getElementById("button2");
       button.style.display = "none";
+
       var button = document.getElementById("button1");
       button.style.display = "inline";
     }
   </script>
+
   <!-- Adding Content -->
-  <button class="part1" type="button" name="button" id="button1" onclick="addContent()">Add Default Content</button>
-  <button class="part1" type="button" name="button" id="button2" style="display:none;" onclick="removeContent()">Remove Default Content</button>
+
+  <button class="parts" type="button" name="button" id="button1" onclick="addContent()">Add Default Content</button>
+  <button class="parts" type="button" name="button" id="button2" style="display:none;" onclick="removeContent()">Remove Default Content</button>
+
   <div id="info1">
     <p id="para1"></p>
   </div>
 
   <hr class="rulers">
 
-  <div class="introduction2">
+  <div class="introduction">
     <p>Creating Elements</p>
-
   </div>
 
-  <button class="part2" type="button" name="button" id="create_input" style="display:inline;" onclick="createInput()">Create Input Tag</button>
-  <button class="part2" type="button" name="button" id="remove_input" style="display:none;" onclick="removeInput()">Remove Input Tag</button>
+  <button class="parts" type="button" name="button" id="create_input" style="display:inline;" onclick="createInput()">Create Input Tag</button>
+  <button class="parts" type="button" name="button" id="remove_input" style="display:none;" onclick="removeInput()">Remove Input Tag</button>
+
   <div id="input_tag">
 
-
   </div>
-  <button class="part2" type="button" name="button" id="print_input" style="display:none;" onclick="printInput()">Print Input</button>
-  <button class="part2" type="button" name="button" id="reset_input" style="display:none;" onclick="resetInput()">Reset Input</button>
+
+  <button class="parts" type="button" name="button" id="print_input" style="display:none;" onclick="printInput()">Print Input</button>
+  <button class="parts" type="button" name="button" id="reset_input" style="display:none;" onclick="resetInput()">Reset Input</button>
+
   <div id="info2">
     <p id="para2"></p>
   </div>
 
   <hr class="rulers">
 
+  <div class="introduction">
+    <p>Greet Yourself with an Alert!</p>
+  </div>
+
+  <input type="text" class="parts" name="name" id="greet_name" value="">
+
+  <button class="parts part3" type="button" name="button" id="greet_me" style="display:inline;" onclick="greetName()">Greet Me!</button>
+
+  <hr class="rulers">
 
 </body>
 

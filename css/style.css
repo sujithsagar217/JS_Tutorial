@@ -10,22 +10,16 @@ body {
   text-align: center;
 }
 
-.introduction2{
-  text-align: center;
-}
-
-.part1 {
+.parts {
   margin-left: 35%;
   padding: 5px;
   display: inline;
 }
 
-.part2 {
-  margin-left: 35%;
-  padding: 5px;
-  display: inline;
+.part3{
+  margin-left: 0;
+  margin-bottom: 10px;
 }
-
 
 #info1 {
   margin-left: 2%;
