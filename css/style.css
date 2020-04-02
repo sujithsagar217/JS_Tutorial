@@ -28,6 +28,27 @@ hr {
   margin-bottom: 10px;
 }
 
+.qna{
+  margin-left: 0;
+  padding: 5px;
+  display: inline;
+}
+.qna_para{
+  margin-left: 38%;
+}
+
+.result{
+  display:inline;
+}
+
+.correct{
+  color: green;
+}
+
+.wrong{
+  color:red;
+}
+
 #info1 {
   margin-left: 2%;
   display: inline;
@@ -53,5 +74,9 @@ hr {
 
 #para4 {
   font-size: 18px;
+  display: inline;
+}
+
+#info5{
   display: inline;
 }

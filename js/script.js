@@ -106,9 +106,43 @@ function greetName(){
 /* part 4 functions */
 
 function showDate(){
+
   var para=document.getElementById("para4");
-  para.innerHTML=Date();
+  var date=Date();
+  para.innerHTML=date;
+
+  console.log(typeof(Date()));
 
   console.log("Successfully shown Date and Time");
 
+}
+
+//end part 4 functions
+
+/* part 5 functions */
+
+function checkAnswer(ans_num){
+  console.log(ans_num);
+  var answers=[12,111,561,561];
+  var answer='answer'+ans_num;
+  var result='result'+ans_num;
+  var ans_num=Number(ans_num);
+  var user_answer=document.getElementById(answer).value;
+  console.log(user_answer);
+  console.log(answers[ans_num-1]);
+  if(user_answer==answers[ans_num-1]){
+    var t_result=result+'T';
+    var decision=document.getElementById(t_result);
+    decision.style.display="inline";
+    var f_result=result+'F';
+    var decision=document.getElementById(f_result);
+    decision.style.display="none";
+  } else {
+    var f_result=result+'F';
+    var decision=document.getElementById(f_result);
+    decision.style.display="inline";
+    var t_result=result+'T';
+    var decision=document.getElementById(t_result);
+    decision.style.display="none";
+  }
 }
