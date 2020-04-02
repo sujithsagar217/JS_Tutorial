@@ -97,6 +97,18 @@ function greetName(){
 
   window.alert("Hello "+user_name);
 
+  console.log("Successfully finished Greeting");
+
 }
 
 //end part 3 functions
+
+/* part 4 functions */
+
+function showDate(){
+  var para=document.getElementById("para4");
+  para.innerHTML=Date();
+
+  console.log("Successfully shown Date and Time");
+
+}

@@ -6,6 +6,13 @@ body {
   font-size: 25px;
 }
 
+hr {
+  border-style: dotted none none none;
+  border-width: 10px;
+  border-color: #deddfa;
+  width: 15%;
+}
+
 .introduction {
   text-align: center;
 }
@@ -36,5 +43,15 @@ body {
 }
 
 #para2 {
+  display: inline;
+}
+
+#info4 {
+  margin-left: 2%;
+  display: inline;
+}
+
+#para4 {
+  font-size: 18px;
   display: inline;
 }
