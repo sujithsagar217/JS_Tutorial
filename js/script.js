@@ -1,7 +1,7 @@
-/*TESTING*/
+/*TESTING
 var x=window.prompt("enter your name");
 console.log(x);
-/*Testing*/
+Testing*/
 console.log("EXTERNAL");
 
 /* Part 2 Functions */
