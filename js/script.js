@@ -160,3 +160,19 @@ function checkAnswer(ans_num){
   console.log("Successfully Checked the Answer and has shown the Result");
 
 }
+
+// end part 5 functions
+
+/* part 6 functions */
+
+function greetName2(){
+
+  var user_name =  window.prompt("Enter your name ");
+
+    window.alert("Once again Hello!!! "+user_name);
+
+  console.log("Successfully finished Greeting using Prompt");
+
+}
+
+//end part 6 functions

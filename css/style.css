@@ -6,7 +6,16 @@ body {
   font-size: 25px;
 }
 
+h2 {
+  text-decoration: underline;
+}
+
+p {
+  text-decoration: underline;
+}
+
 hr {
+  margin: 25px auto 25px auto;
   border-style: dotted none none none;
   border-width: 10px;
   border-color: #deddfa;
@@ -27,6 +36,11 @@ hr {
   margin-left: 0;
   margin-bottom: 10px;
 }
+
+/*.part6{
+  margin-left: 4%;
+  margin-bottom: 10px;
+}*/
 
 .qna{
   margin-left: 0;
