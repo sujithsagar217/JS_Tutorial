@@ -99,7 +99,7 @@ function greetName(){
 
   var user_name=document.getElementById("greet_name").value;
 
-  window.alert("Hello "+user_name);
+  window.alert("Hello "+user_name+", Please Believe in yourself..!");
 
   console.log("Successfully finished Greeting");
 
@@ -169,7 +169,7 @@ function greetName2(){
 
   var user_name =  window.prompt("Enter your name ");
 
-    window.alert("Once again Hello!!! "+user_name);
+    window.alert("Once again Hello!!! "+user_name+", Please Believe in yourself..!");
 
   console.log("Successfully finished Greeting using Prompt");
 
